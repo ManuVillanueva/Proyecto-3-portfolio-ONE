@@ -1,0 +1,39 @@
+.hero {
+  background: rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.logo img {
+  position: relative;
+  margin: .5rem 1rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.nav {
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  padding: .7rem;
+}
+
+.links li {
+  margin: .5rem;
+  font-size: 15px;
+  list-style-type: none;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #464646;
+}
+
+#email--hero {
+  font-weight: 550;
+  color: black;
+}
