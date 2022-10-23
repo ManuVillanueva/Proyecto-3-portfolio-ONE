@@ -1,0 +1,27 @@
+.skills {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.skills h2 {
+  position: absolute;
+}
+
+.skill__card {
+  display: flex;
+  list-style-type: none;
+  padding: 2rem;
+}
+
+.skill__card li {
+  background: #ccc;
+  margin: 4rem;
+  width: 176px;
+  height: 174px;
+  text-align: center;
+}
+
+.skill__card article {
+  margin-top: 9rem;
+}
