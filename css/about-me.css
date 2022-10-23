@@ -1,0 +1,17 @@
+.about_me {
+  background: #EAF2FD;
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+  height: 15rem;
+}
+
+.about_me__title {
+  margin: 2rem 5rem;
+  width: 70%;
+}
+
+#about_me__text {
+  width: 70%;
+  text-align: left;
+}

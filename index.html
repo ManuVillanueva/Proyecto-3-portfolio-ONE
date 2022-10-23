@@ -5,12 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"> 
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/presentation.css">
+  <link rel="stylesheet" href="css/about-me.css">
+  <link rel="stylesheet" href="css/skills.css">
 </head>
 <body>
   <header class="hero">
@@ -35,23 +38,57 @@
       </div>
       <div class="presentation--container">
         <h2>Soy <span>Manuel Villanueva</span>, desarrollador web.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam dolore et porro. Necessitatibus, suscipit nemo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam tempora eum corporis debitis praesentium a ratione voluptate velit quam?</p>
       </div>
       <div class="social--networks">
-        <ul class="links">
+        <ul class="social-links">
           <li></li>
-          <a href="#">Github</a>
+          <a href="#"><i class="fa-brands fa-github"></i>Github</a>
           <li></li>
-          <a href="#">Linkedin</a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
           <li></li>
-          <a href="#">Twitter</a>
+          <a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
           <li></li>
-          <a href="#">Curriculum</a>
+          <a href="#"><i class="fa-solid fa-file-pdf"></i>Curriculum</a>
         </ul>
       </div>
     </section>
 
     <!--About me section-->
+    <section class="about_me">
+      <div class="about_me__title">
+        <h2>Sobre mi</h2>
+        <p
+        id="about_me__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis assumenda totam veniam, quos et itaque necessitatibus perspiciatis vero. Illo tempore laborum corrupti repellendus mollitia totam ad, nisi quaerat, pariatur quis maxime atque quas assumenda error ullam ipsum odit ut sint provident. Explicabo repellat ratione numquam harum asperiores suscipit nemo placeat.</p>
+      </div>
+    </section>
+
+    <!--Skills section-->
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul class="skill__card">
+        <li class="html">
+          <article class="card__content">
+            <p>HTML</p>
+          </article>
+        </li>
+        <li class="css">
+          <article class="card__content">
+            <p>CSS</p>
+          </article>
+        </li>
+        <li class="javascript">
+          <article class="card__content">
+            <p>JAVASCRIPT</p>
+          </article>
+        </li>
+        <li class="git">
+          <article class="card__content">
+            <p>GIT</p>
+          </article>
+        </li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>
