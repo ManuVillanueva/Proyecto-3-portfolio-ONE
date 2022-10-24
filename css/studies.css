@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   padding: 2rem;
+  flex-wrap: wrap;
 }
 
 .studies h2 {
@@ -17,7 +18,7 @@
 
 .studies__card li {
   background: #fff;
-  margin: 2rem;
+  margin: 2rem .4rem;
   width: 368px;
   height: 286px;
   text-align: center;
@@ -30,5 +31,16 @@
 }
 
 .title__studies {
-  margin-top: 7rem;
+  margin-top: 6rem;
+  color: #464646;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.description__studies {
+  color: #a7a8a7;
+  margin-top: .5rem;
+  font-size: 13px;
+  position: relative;
 }
