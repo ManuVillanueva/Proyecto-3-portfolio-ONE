@@ -15,13 +15,41 @@
 }
 
 .skill__card li {
-  background: #ccc;
+  /* background: #ccc; */
   margin: 4rem;
   width: 176px;
   height: 174px;
   text-align: center;
+  box-shadow: 5px 5px 5px #cccccc;
+  border-radius: 5px;
+}
+
+.skill__card li:hover {
+  transform: scale(1.1);
+  transition: 600ms;
+  cursor: pointer;
 }
 
 .skill__card article {
   margin-top: 9rem;
+}
+
+#html__icon {
+  position: relative;
+  top: -8rem;
+}
+
+#css__icon {
+  position: relative;
+  top: -8rem;
+}
+
+#js__icon {
+  position: relative;
+  top: -8rem;
+}
+
+#git__icon {
+  position: relative;
+  top: -8rem;
 }
