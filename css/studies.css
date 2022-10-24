@@ -1,0 +1,34 @@
+.studies {
+  background: #EAF2FD;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.studies h2 {
+  position: absolute;
+}
+
+.studies__card {
+  display: flex;
+  padding: 2rem;
+  list-style: none;
+}
+
+.studies__card li {
+  background: #fff;
+  margin: 2rem;
+  width: 368px;
+  height: 286px;
+  text-align: center;
+  box-shadow: 5px 5px 5px #cccccc;
+  border-radius: 5px;
+}
+
+.studies__card img {
+  margin-top: 4rem;
+}
+
+.title__studies {
+  margin-top: 7rem;
+}
