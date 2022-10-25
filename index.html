@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/skills.css">
   <link rel="stylesheet" href="css/studies.css">
   <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
   <header class="hero">
@@ -23,11 +24,11 @@
     <nav class="nav">
       <ul class="links">
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre mi</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Hobbies</a></li>
-        <li><a href="#">Formación</a></li>
-        <li><a href="#">Proyectos</a></li>
+        <li><a href="#about_me">Sobre mi</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#studies">Formación</a></li>
+        <li><a href="#portfolio">Proyectos</a></li>
         <li id="email--hero"><a href="#">correoelectronico@hotmail.com</a></li>
       </ul>
     </nav>
@@ -57,7 +58,7 @@
     </section>
 
     <!--About me section-->
-    <section class="about_me">
+    <section id="about_me" class="about_me">
       <div class="about_me__title">
         <h2>Sobre mi</h2>
         <p
@@ -66,7 +67,7 @@
     </section>
 
     <!--Skills section-->
-    <section class="skills">
+    <section id="skills" class="skills">
       <h2>Skills</h2>
       <ul class="skill__card">
         <li class="html">
@@ -97,7 +98,7 @@
     </section>
 
     <!--Hobbies section-->
-    <section class="skills">
+    <section id="hobbies" class="skills">
       <h2>Hobbies</h2>
       <ul class="skill__card">
         <li class="html">
@@ -128,7 +129,7 @@
     </section>
 
     <!--studies section-->
-    <section class="studies">
+    <section id="studies" class="studies">
       <h2>Formación académica</h2>
       <ul class="studies__card">
         <li>
@@ -187,33 +188,81 @@
           <div class="overlay">
             <img src="images/encriptador.png" alt="Una captura del proyecto de encriptador del programa ONE">
             <div class="info">
-              <h4>Description</h4>
-              <p>Landing Page</p>
+              <h4>Encriptador</h4>
+              <p>Proyecto realizado en el programa ONE.</p>
+              <a href="#">Ver Demo</a>
+              <a href="#">Ver código fuente</a>
             </div>
           </div>
         </div>
   
         <div class="project">
           <div class="overlay">
-            <img src="img/first-landing-page.png" alt="Una imagen de mi primera landing page">
+            <img src="images/Landing-Page-Restaurant-1.png" alt="Una imagen de mi primera landing page">
             <div class="info">
-              <h4>Description</h4>
-              <p>Web Design</p>
+              <h4>Landing Page</h4>
+              <p>Página hecha para practicar los conocimientos en HTML y CSS.</p>
+              <a href="#">Ver Demo</a>
+              <a href="#">Ver código fuente</a>
             </div>
           </div>
         </div>
   
         <div class="project">
           <div class="overlay">
-            <img src="img/first-landing-page.png" alt="Una imagen de mi primera landing page">
+            <img src="images/Landing-Page-services.png" alt="Una imagen de mis primeras landing page">
             <div class="info">
-              <h4>Description</h4>
-              <p>Web Design</p>
+              <h4>Landing Page</h4>
+              <p>Página hecha en el curso de CSS de Alura.</p>
+              <a href="#">Ver Demo</a>
+              <a href="#">Ver código fuente</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="overlay">
+            <img src="images/todo-web.png" alt="Una imagen de un todo app hecha como proyecto">
+            <div class="info">
+              <h4>To Do App</h4>
+              <p>Página hecha en el curso de JavaScript de Alura.</p>
+              <a href="#">Ver Demo</a>
+              <a href="#">Ver código fuente</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="overlay">
+            <img src="images/formulario-web.png" alt="Una imagen de un formulario hecha como proyecto">
+            <div class="info">
+              <h4>Formulario Web</h4>
+              <p>Página hecha en el curso de JavaScript de Alura.</p>
+              <a href="#">Ver Demo</a>
+              <a href="#">Ver código fuente</a>
             </div>
           </div>
         </div>
       </div>
   
+    </section>
+
+    <!--Contact section-->
+    <section class="contact">
+      <div class="contact__tittle">
+        <h2>Contacto</h2>
+        <p>¿Quieres contactarme?<br>
+          Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+      </div>
+      <form class="contact__form" action="">
+        <input class="input__form" type="text" placeholder="Nombre">
+        <input class="input__form" type="email" placeholder="Email">
+        <input class="input__form" type="text" placeholder="Sujeto">
+      </form>
+      <div class="textarea">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Su mensaje..."></textarea>
+      </div>
+      <input class="btn__send" type="submit" value="Enviar">
     </section>
   </main>
 </body>

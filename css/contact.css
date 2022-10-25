@@ -1,0 +1,48 @@
+.contact {
+  display: flex;
+  padding: 2rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+.contact h2 {
+  margin-bottom: 2rem;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.input__form {
+  margin: 10px 0;
+  height: 4vh;
+  width: 50vh;
+  border: 1px solid #8a8a8a;
+  border-radius: 10px;
+}
+
+.textarea textarea {
+  border: 1px solid #8a8a8a;
+  border-radius: 10px;
+  resize: none;
+}
+
+.btn__send {
+  display: flex;
+  align-self: center;
+  border: 1px solid #8a8a8a;
+  border-radius: 15px;
+  margin: 15px 0;
+  width: 20vh;
+  height: 5vh;
+  transition: 600ms;
+}
+
+.btn__send:hover {
+  background-color: #2A7AE4;
+  color: #fff;
+  cursor: pointer;
+}
