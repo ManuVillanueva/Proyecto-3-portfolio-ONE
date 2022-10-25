@@ -18,7 +18,8 @@
 
 .input__form {
   margin: 10px 0;
-  height: 4vh;
+  padding: 10px;
+  height: 6vh;
   width: 50vh;
   border: 1px solid #8a8a8a;
   border-radius: 10px;
@@ -27,6 +28,7 @@
 .textarea textarea {
   border: 1px solid #8a8a8a;
   border-radius: 10px;
+  padding: 10px;
   resize: none;
 }
 
