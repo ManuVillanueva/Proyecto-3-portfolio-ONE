@@ -11,12 +11,13 @@
 #portfolio .row {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0;
+  margin: 3rem 2rem;
+  flex-wrap: wrap;
 }
 
 #portfolio .row .project {
   max-width: 450px;
-  margin: 10px 10px;
+  margin-bottom: 3rem;
   position: relative;
   overflow: hidden;
   box-shadow: 5px 5px 5px #cccccc;
@@ -39,7 +40,7 @@
   position: absolute;
   left: 0;
   background-color: rgba(0, 0, 0, .8);
-  color: #ff5080;
+  color: #ffffff;
   width: 100%;
   padding: 10px;
   opacity: 0;
@@ -50,4 +51,10 @@
 #portfolio .row .project:hover .info {
   opacity: 1;
   bottom: 0;
+}
+
+.info a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #2A7AE4;
 }
