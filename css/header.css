@@ -17,10 +17,11 @@
 }
 
 .links {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   padding: .7rem;
-  margin-left: 2rem;
+  left: 20%;
 }
 
 .links li {
