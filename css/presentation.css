@@ -1,17 +1,27 @@
 .presentation {
+  background-image: url(../images/presentation-bg.jpg);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
   display: flex;
   margin-top: 4rem;
   /* max-width: 1100px; */
   flex-direction: row-reverse;
   justify-content: center;
-  width: 80%;
-  margin-left: 10rem;
+  height: 100vh;
 }
 
 #photo {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
+  margin-top: 10rem;
+}
+
+.presentation--container {
+  padding: 2rem;
+  margin-top: 10rem;
 }
 
 .presentation--container h2 {
@@ -21,7 +31,7 @@
 }
 
 .presentation--container p {
-  margin: 0 .5rem;
+  margin: 2rem .5rem;
   padding: .5rem;
 }
 
@@ -34,19 +44,20 @@
   list-style-type: none;
   position: absolute;
   padding: 1rem;
-  top: 21rem;
+  margin-top: 40rem;
+  margin-left: 20rem;
 }
 
 .social--networks .social-links a{
   margin: 0 .5rem;
   text-decoration: none;
-  color: #464646;
+  color: #4f8fe4;
   justify-content: center;
   transition: .5s;
 }
 
 .social--networks .social-links a:hover {
-  color: #4f8fe4;ç
+  color: #464646;
 }
 
 .social--networks .social-links .fa-brands {
