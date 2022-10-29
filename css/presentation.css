@@ -8,10 +8,6 @@
   margin-left: 10rem;
 }
 
-.photo--container {
-
-}
-
 #photo {
   width: 15rem;
   height: 15rem;
@@ -46,6 +42,11 @@
   text-decoration: none;
   color: #464646;
   justify-content: center;
+  transition: .5s;
+}
+
+.social--networks .social-links a:hover {
+  color: #4f8fe4;ç
 }
 
 .social--networks .social-links .fa-brands {

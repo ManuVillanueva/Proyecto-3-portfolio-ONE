@@ -3,6 +3,11 @@
   display: flex;
   justify-content: space-between;
   height: 4rem;
+  /*This is for leave static the header, when scroll down*/
+  position: fixed;
+  width: 100%;
+  margin-top: -4rem;
+  z-index: 1;
 }
 
 .logo img {
@@ -21,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   padding: .7rem;
-  left: 20%;
+  left: 32%;
 }
 
 .links li {
@@ -32,10 +37,24 @@
 
 .links li a {
   text-decoration: none;
+  color: #2A7AE4;
+  transition: .5s;
+}
+
+.links li a:hover {
+  cursor: pointer;
   color: #464646;
 }
 
-#email--hero {
+#email--hero a {
   font-weight: 550;
-  color: black;
+  color: #464646;
+  position: relative;
+  left: 20rem;
+  transition: .5s;
+}
+
+#email--hero a:hover {
+  cursor: pointer;
+  color: #2A7AE4;
 }

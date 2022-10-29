@@ -21,7 +21,9 @@
 </head>
 <body>
   <header class="hero">
-    <div class="logo"><img src="images/logo.png" alt="Logo de codexmanu"></div>
+    <div class="logo">
+      <a href="#"><img src="images/logo.png" alt="Logo de codexmanu"></a>
+    </div>
     <nav class="nav">
       <ul class="links">
         <li><a href="#">Inicio</a></li>
@@ -30,6 +32,7 @@
         <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#studies">Formación</a></li>
         <li><a href="#portfolio">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
         <li id="email--hero"><a href="#">correoelectronico@hotmail.com</a></li>
       </ul>
     </nav>
@@ -152,7 +155,7 @@
         <li>
           <img src="images/alura-logo.svg" alt="Logo de alura">
           <h4 class="title__studies">Formación Front End - ONE Program</h4>
-          <p class="description__studies">2022 - Alura</p>
+          <p id="fix__margin" class="description__studies">2022 - Alura</p>
         </li>
       </ul>
 
@@ -160,7 +163,7 @@
         <li>
           <img id="arg__programa" src="images/arg-programa.png" alt="Logo de Argentina Programa">
           <h4 class="title__studies">Introducción a la Programación.</h4>
-          <p class="description__studies">2021 - Argentina Programa</p>
+          <p id="fix__margin" class="description__studies">2021 - Argentina Programa</p>
         </li>
       </ul>
     </section>
@@ -233,19 +236,19 @@
     </section>
 
     <!--Contact section-->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="contact__tittle">
         <h2>Contacto</h2>
         <p>¿Quieres contactarme?<br>
           Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
       </div>
       <form class="contact__form" action="">
-        <input class="input__form" type="text" placeholder="Nombre">
-        <input class="input__form" type="email" placeholder="Email">
-        <input class="input__form" type="text" placeholder="Asunto">
+        <input class="input__form" type="text" placeholder="Nombre" data-type="name">
+        <input class="input__form" type="email" placeholder="Email" data-type="email">
+        <input class="input__form" type="text" placeholder="Asunto" data-type="subject">
       </form>
       <div class="textarea">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Su mensaje..."></textarea>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Su mensaje..." required></textarea>
       </div>
       <input class="btn__send" type="submit" value="Enviar">
     </section>
