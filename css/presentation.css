@@ -67,3 +67,39 @@
 .social--networks .social-links .fa-solid {
   margin: 1rem;
 }
+
+/*Responsive design*/
+
+@media screen and (max-width: 800px) {
+  .presentation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #photo {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    margin: -35px 5rem;
+  }
+
+  .presentation--container h2 {
+    font-size: 2rem;
+    margin: 1.2rem auto;
+  }
+
+  .presentation--container p {
+    margin: 1rem;
+    padding: 0;
+  }
+
+  .social--networks .social-links {
+    padding: 0;
+    margin: -4rem auto;
+  }
+
+  .social--networks .social-links a {
+    text-align: center;
+    margin-top: 13px;
+  }
+}
