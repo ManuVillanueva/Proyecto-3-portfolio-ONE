@@ -54,3 +54,19 @@
   font-size: 13px;
   position: relative;
 }
+
+/*Responsive design*/
+
+@media screen and (max-width: 800px) {
+  .studies__card {
+    padding:1rem 0;
+  }
+
+  .studies__card li {
+    margin: 2rem auto;
+  }
+
+  #fix__margin {
+    margin: 0%;
+  }
+}
