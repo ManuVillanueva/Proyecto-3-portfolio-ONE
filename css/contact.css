@@ -25,19 +25,22 @@
   border-radius: 10px;
 }
 
-.textarea textarea {
+.form__container textarea {
   border: 1px solid #8a8a8a;
   border-radius: 10px;
   padding: 10px;
   resize: none;
+  margin-top: 1rem;
 }
 
 .btn__send {
   display: flex;
   align-self: center;
+  justify-content: center;
   border: 1px solid #8a8a8a;
   border-radius: 15px;
-  margin: 15px 0;
+  margin: 25px 0;
+  padding: .4rem;
   width: 20vh;
   height: 5vh;
   transition: 600ms;
@@ -47,4 +50,33 @@
   background-color: #2A7AE4;
   color: #fff;
   cursor: pointer;
+}
+
+/*style for validate inputs*/
+.form__container.fail input {
+  border: 0.1px solid;
+  border-color: #fe5f55;
+}
+
+.form__container.ok input {
+  border: 0.1px solid;
+  border-color: #08ffc8;
+}
+
+.form__container p {
+  visibility: hidden;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: right;
+  margin-top: -.7rem;
+}
+
+.form__container.fail p {
+  visibility: visible;
+  color: #fe5f55;
+}
+
+#textarea__p {
+  margin-top: .2rem;
 }
