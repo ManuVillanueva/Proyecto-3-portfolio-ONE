@@ -30,6 +30,16 @@
   margin-top: 4rem;
 }
 
+#fix__margin {
+  margin-top: 2rem;
+}
+
+#arg__programa {
+  margin-bottom: 1.7rem;
+  position: relative;
+  top: 1rem;
+}
+
 .title__studies {
   margin-top: 6rem;
   color: #464646;
@@ -43,4 +53,20 @@
   margin-top: .5rem;
   font-size: 13px;
   position: relative;
+}
+
+/*Responsive design*/
+
+@media screen and (max-width: 800px) {
+  .studies__card {
+    padding:1rem 0;
+  }
+
+  .studies__card li {
+    margin: 2rem auto;
+  }
+
+  #fix__margin {
+    margin: 0%;
+  }
 }

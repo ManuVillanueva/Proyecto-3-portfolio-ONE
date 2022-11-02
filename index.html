@@ -17,20 +17,26 @@
   <link rel="stylesheet" href="css/studies.css">
   <link rel="stylesheet" href="css/projects.css">
   <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
   <header class="hero">
-    <div class="logo"><img src="images/logo.png" alt="Logo de codexmanu"></div>
+    <div class="logo">
+      <a href="#"><img src="images/logo.png" alt="Logo de codexmanu"></a>
+    </div>
     <nav class="nav">
       <ul class="links">
-        <li><a href="#">Inicio</a></li>
+        <li class="active"><a href="#">Inicio</a></li>
         <li><a href="#about_me">Sobre mi</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#studies">Formación</a></li>
         <li><a href="#portfolio">Proyectos</a></li>
-        <li id="email--hero"><a href="#">correoelectronico@hotmail.com</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li id="email--hero"><a href="#">manu.bsso@hotmail.es</a></li>
       </ul>
+      <!--Menu Icon-->
+      <img id="menu__btn" src="images/hamburger-menu.png" alt="Image hamburger icon">
     </nav>
   </header>
   <main>
@@ -41,7 +47,7 @@
       </div>
       <div class="presentation--container">
         <h2>Soy <span>Manuel Villanueva</span>, desarrollador web.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam tempora eum corporis debitis praesentium a ratione voluptate velit quam?</p>
+        <p>Actualmente, me encuentro estudiando Desarrollo web en Oracle Next Education y Alura Latam, para en el futuro poder dedicarme al apasionante mundo de la programación.</p>
       </div>
       <div class="social--networks">
         <ul class="social-links">
@@ -62,7 +68,9 @@
       <div class="about_me__title">
         <h2>Sobre mi</h2>
         <p
-        id="about_me__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis assumenda totam veniam, quos et itaque necessitatibus perspiciatis vero. Illo tempore laborum corrupti repellendus mollitia totam ad, nisi quaerat, pariatur quis maxime atque quas assumenda error ullam ipsum odit ut sint provident. Explicabo repellat ratione numquam harum asperiores suscipit nemo placeat.</p>
+        id="about_me__text">Me considero una persona paciente, que tiene mucha ganas de aprender y enseñar, porque creo que el único modo de aprender bien es hacerlo en comunidad.
+
+        Busco oportunidades para hacer prácticas en el área de desarrollo web, que me permita crecer intelectualmente y a desarrollar mis conocimientos, para crecer junto a la empresa y a mis compañeros de trabajo.</p>
       </div>
     </section>
 
@@ -151,31 +159,15 @@
         <li>
           <img src="images/alura-logo.svg" alt="Logo de alura">
           <h4 class="title__studies">Formación Front End - ONE Program</h4>
-          <p class="description__studies">2022 - Alura</p>
+          <p id="fix__margin" class="description__studies">2022 - Alura</p>
         </li>
       </ul>
 
       <ul class="studies__card">
         <li>
-          <img src="images/alura-logo.svg" alt="Logo de alura">
-          <h4 class="title__studies">Formación Front End - ONE Program</h4>
-          <p class="description__studies">2022 - Alura</p>
-        </li>
-      </ul>
-
-      <ul class="studies__card">
-        <li>
-          <img src="images/alura-logo.svg" alt="Logo de alura">
-          <h4 class="title__studies">Formación Front End - ONE Program</h4>
-          <p class="description__studies">2022 - Alura</p>
-        </li>
-      </ul>
-
-      <ul class="studies__card">
-        <li>
-          <img src="images/alura-logo.svg" alt="Logo de alura">
-          <h4 class="title__studies">Formación Front End - ONE Program</h4>
-          <p class="description__studies">2022 - Alura</p>
+          <img id="arg__programa" src="images/arg-programa.png" alt="Logo de Argentina Programa">
+          <h4 class="title__studies">Introducción a la Programación.</h4>
+          <p id="fix__margin" class="description__studies">2021 - Argentina Programa</p>
         </li>
       </ul>
     </section>
@@ -248,22 +240,59 @@
     </section>
 
     <!--Contact section-->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="contact__tittle">
         <h2>Contacto</h2>
         <p>¿Quieres contactarme?<br>
           Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
       </div>
-      <form class="contact__form" action="">
-        <input class="input__form" type="text" placeholder="Nombre">
-        <input class="input__form" type="email" placeholder="Email">
-        <input class="input__form" type="text" placeholder="Sujeto">
+      <form id="form__inputs" class="contact__form" action="">
+        
+        <div class="form__container">
+          <input id="name__form" class="input__form" type="text" placeholder="Nombre" data-type="name">
+          <p></p>
+        </div>
+
+        <div class="form__container">
+          <input id="email__form" class="input__form" type="email" placeholder="Email" data-type="email">
+          <p></p>
+        </div>
+
+        <div class="form__container">
+          <input id="subject__form" class="input__form" type="text" placeholder="Asunto" data-type="subject">
+          <p></p>
+        </div>
+        
+        <div class="form__container">
+          <textarea name="" id="textarea" cols="30" rows="10" placeholder="Su mensaje..."></textarea>
+          <p id="textarea__p"></p>
+        </div>
+        
+        <button class="btn__send">Enviar</button>
+
       </form>
-      <div class="textarea">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Su mensaje..."></textarea>
-      </div>
-      <input class="btn__send" type="submit" value="Enviar">
+      <!-- <input class="btn__send" type="" form="form__inputs" value="Enviar"> -->
     </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <p>Made by <a href="#">Manuel Villanueva</a> - 2022</p>
+      <div class="social__media">
+        <ul class="social__links">
+          <li></li>
+          <a href="#"><i class="fa-brands fa-github"></i>Github</a>
+          <li></li>
+          <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+          <li></li>
+          <a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+          <li></li>
+          <a href="#"><i class="fa-solid fa-file-pdf"></i>Curriculum</a>
+        </ul>
+      </div>
+    </footer>
   </main>
+
+  <script src="script/validaciones.js"></script>
+  <script src="script/hamburger-menu.js"></script>
 </body>
 </html>

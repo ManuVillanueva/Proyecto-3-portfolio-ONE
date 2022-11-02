@@ -1,17 +1,27 @@
 .about_me {
   background: #EAF2FD;
   display: flex;
-  margin-top: 5%;
   justify-content: center;
   height: 15rem;
 }
 
 .about_me__title {
-  margin: 2rem 5rem;
+  margin-top: 2rem;
+  text-align: center;
   width: 70%;
 }
 
 #about_me__text {
-  width: 70%;
-  text-align: left;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/*Responsive design*/
+
+@media screen and (max-width: 800px) {
+  .about_me {
+    margin-top: -4rem;
+    height: auto;
+    padding: 10px;
+  }
 }

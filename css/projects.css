@@ -58,3 +58,28 @@
   text-decoration: none;
   color: #2A7AE4;
 }
+
+/*Responsive design*/
+
+@media screen and (max-width: 800px) {
+  #portfolio .row .project img {
+    filter: none;
+    margin-bottom: -8px;
+  }
+
+  #portfolio .row .project .info {
+    position: inherit;
+    opacity: .9;
+    font-size: 14px;
+  }
+
+  .info p {
+    margin: 7px;
+  }
+
+  .info a {
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+  }
+}
