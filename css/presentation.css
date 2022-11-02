@@ -77,10 +77,17 @@
   }
 
   #photo {
-    position: absolute;
+    /* position: absolute;
     width: 15rem;
     height: 15rem;
-    margin: -35px 5rem;
+    margin: -35px 5rem; */
+    display: none;
+  }
+
+  .presentation--container {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 10rem;
   }
 
   .presentation--container h2 {
@@ -95,7 +102,7 @@
 
   .social--networks .social-links {
     padding: 0;
-    margin: -4rem auto;
+    margin: -10rem auto;
   }
 
   .social--networks .social-links a {
