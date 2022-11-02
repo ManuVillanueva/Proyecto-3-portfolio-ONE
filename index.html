@@ -242,15 +242,32 @@
         <p>¿Quieres contactarme?<br>
           Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
       </div>
-      <form class="contact__form" action="">
-        <input class="input__form" type="text" placeholder="Nombre" data-type="name">
-        <input class="input__form" type="email" placeholder="Email" data-type="email">
-        <input class="input__form" type="text" placeholder="Asunto" data-type="subject">
+      <form id="form__inputs" class="contact__form" action="">
+        
+        <div class="form__container">
+          <input id="name__form" class="input__form" type="text" placeholder="Nombre" data-type="name">
+          <p></p>
+        </div>
+
+        <div class="form__container">
+          <input id="email__form" class="input__form" type="email" placeholder="Email" data-type="email">
+          <p></p>
+        </div>
+
+        <div class="form__container">
+          <input id="subject__form" class="input__form" type="text" placeholder="Asunto" data-type="subject">
+          <p></p>
+        </div>
+        
+        <div class="form__container">
+          <textarea name="" id="textarea" cols="30" rows="10" placeholder="Su mensaje..."></textarea>
+          <p id="textarea__p"></p>
+        </div>
+        
+        <button class="btn__send">Enviar</button>
+
       </form>
-      <div class="textarea">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Su mensaje..." required></textarea>
-      </div>
-      <input class="btn__send" type="submit" value="Enviar">
+      <!-- <input class="btn__send" type="" form="form__inputs" value="Enviar"> -->
     </section>
 
     <!--Footer-->
@@ -270,5 +287,7 @@
       </div>
     </footer>
   </main>
+
+  <script src="script/validaciones.js"></script>
 </body>
 </html>
