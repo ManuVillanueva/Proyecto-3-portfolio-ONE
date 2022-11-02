@@ -15,3 +15,13 @@
   margin-top: 2rem;
   text-align: center;
 }
+
+/*Responsive design*/
+
+@media screen and (max-width: 800px) {
+  .about_me {
+    margin-top: -4rem;
+    height: auto;
+    padding: 10px;
+  }
+}

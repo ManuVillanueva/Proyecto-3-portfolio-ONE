@@ -53,3 +53,11 @@
   position: relative;
   top: -8rem;
 }
+
+/*Responsive design*/
+
+@media screen and (max-width: 800px) {
+  .skill__card {
+    flex-direction: column;
+  }
+}
